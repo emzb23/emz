@@ -1,0 +1,187 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+
+
+/* HEADER */
+
+    header {
+        background-image: url(berg2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 150px;
+    }
+
+    #h1-main {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 50px;
+        font-weight: 900;
+        text-shadow: 2px 2px #fff;
+    }
+
+/* NAV */
+
+    nav {
+        background-color: black;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+
+    nav ul li a {
+        padding: 1em;
+        color: #fff;
+        text-justify: distribute;
+    }
+
+
+/* MAIN */
+
+main {
+    margin: 20px;
+}
+/* ARTICLE */
+
+    article, .win-button{
+            margin-top: 20px;
+        }
+    
+    #kattbilder {
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    #kattbilder img {
+        height: 40%;
+        width: 40%;
+    }
+
+    .blogg {
+        border: 2px solid #ccc;
+        padding: 1em;
+        box-shadow: 7px 7px #ccc;
+    }
+
+    article p, article h3, article img{
+        margin-top: 1em;
+    }
+
+    /* ANNAT */
+    .win-button {
+        border: 1px solid #7e7e7e;
+        padding: 5px;
+        display: inline-block;
+        box-shadow: 2px 2px #ccc;
+        font-family: cursive;
+    }
+
+#underkonstruktion {
+    width: 40%;
+    height: 40%;
+}
+
+/* EXEMPEL */
+
+    .exempel {
+        margin-top: 1em;
+        width: 60%;
+        padding: 1em;
+        white-space: break-spaces;
+        border: #ccc solid 2px;
+    }
+
+    .exempel-color {
+        padding: 25px;
+    }
+
+    .exempel-color span {
+        padding: 10px;
+
+    }
+
+    .exempel-text p {
+        padding: 5px;
+    }
+
+
+/* TABLE */
+
+    table {
+        border-collapse: collapse;
+        border: solid #ddd 1px;
+    }
+
+    tr, td {
+        padding: 10px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #ddd;
+    }
+
+    .tips {
+        padding: 25px;
+    }
+
+    #datortips-shortcut-table {
+        border: 1px solid black;
+    }
+
+/* LISTOR */
+
+    #datatips-ul {
+        background-color: #f0f;
+        list-style: none;
+        display: inline-block;
+        padding: 0 20px 20px 20px;
+    }
+
+    #datatips-ul li {
+        margin-top: 1em;
+        background-color: aqua;
+    }
+
+/* FOOTER */
+
+    #footer-h3 {
+        margin-bottom: 10px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    footer {
+        background-color: dodgerblue;
+        display: flex;
+    }
+    
+    footer ul, section {
+        flex-basis: 50%;
+        padding: 1em;
+    }
+
+
+    footer ul li {
+        color: black;
+        padding: 8px 0;
+        list-style: none;
+    }
+
+    footer ul li a {
+        color: black;
+    }
+
+    #copr {
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        padding: 10px;
+    }
