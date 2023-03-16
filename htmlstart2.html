@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-guiden</title>
+    <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+<div id="header"></div>
+
+<main>
+    <!-- INTRO -->
+
+    <h2>Guide för att göra en egen hemsida!</h2>
+    <article>
+        <h2>Välkommen in i HTML-världen!</h2>
+        
+        <p>HTML står för Hyper Text Markup Language och används för att skapa hemsidor på ett sätt som både människor och datorer kan komma överens om. Efter att en forskare vid namn Tim Berners-Lee skapade <a href="http://info.cern.ch/hypertext/WWW/TheProject.html" style="color:black">den första hemsidan</a> 1989 kunde man äntligen länka ihop hemsidor med andra och när internet blev tillgängligt för allmänheten i mitten av nittiotalet exploderade intresset för att skapa egna hemsidor. 1998 bestämde regeringen att folk skulle sluta låna hem och skabba ner arbetsplatsens datorer. Efter att i gymnasiet ha praktiserat på ett företag som städade leasade datorer förstår jag dem. Nu skulle man istället ha en dator hemma. Under de tre kommande åren adopteras nästan en miljon datorer. Självklart missbrukas detta genom kryphål, men det är kanske tack vare detta halva landets befolkning använde nätet vid mellenieskiftet.</p>
+
+        <p>Men nu ska vi inte babbla på om gamla hemsidor som ser ut som kräks och bilder som laddar bit för bit via ditt långsamma modem. Först ska jag förklara lite hur HTML fungerar och vad du behöver för att sätta igång.</p>
+
+        <h3>Hur fungerar en hemsida?</h3>
+
+        <p>Hemsidorna i sig består av olika filer. En för innehållet på hemsidan, en för hemsidans styling och en för funktionalitet på hemsidan. Till det kan man lägga till bilder, videor, ljud osv. Sedan laddas detta upp på en server som andra datorer kan nå. Men vi ska börja med att bara göra en enkel, lokal hemsida.</p>
+
+        <h3>Hur börjar jag?</h3>
+
+        <p>Först av allt behöver du en textredigerare, våra datorer på media ska vara redo med programmet Notepad++ installerat. I detta program ska vi skriva själva hemsidan. Vi kommer även behöva använda oss utav en webbläsare, t.ex. Chrome eller Firefox.</p>
+
+        <img src="/img/filtyp.png" alt="bild med filtyp">
+
+        <p>Nu när du har en hemsida kanske det faktiskt vore roligt att fylla den med lite innehåll?</p>
+            
+    </article>
+
+<!-- SKELETT -->
+    <article>
+        <h2>Del 1: Att bygga ett hemside-skelett</h2>
+
+        <img src="img/bananelement.png" alt="Element med bananparanteser">
+        <p>	Ställ fram en kopp kaffe och inta positionen ”datanörd med gorillanacke”, vi ska börja med HTML! I första lektionen ska vi göra en enkel hemsida men först måste jag förklara lite hur allt fungerar. 
+            
+        HTML består av element med innehåll som datorer kan läsa, dessa omringas av vänster- och högerbanan (eller vinkelparanteser som de lärda säger). De flesta taggar behöver även en sluttagg som föregås av ett snedtreck, men det finns undantag som &lt;!DOCTYPE&gt;.
+        <br>
+
+        <br>
+        De mest grundläggande elementen inom html förutom doctype är html, title samt body. Html är själva grunden på hemsidan, title ger sidan ett namn och body är själva "kroppen" där innehåll som vi människor kan se ska vara. Innehållet kan bland annat bestå av text, bilder, videor och länkar men vi börjar med en rubrik följt av en paragraf med text. Öppna nu filen du gjorde i introt och klistra in nedanstående.
+    </p>
+
+<div class="exempel">&lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt; Min sida! &lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt; En rubrik! &lt;/h1&gt;
+            &lt;p&gt; En paragraf! &lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</div>
+        
+    <p>Gissa vad du precis gjorde? En hemsisda! Ovanstående är själva grunden för en hemsida. Spara filen och klicka sedan på den i mappen. Om allt stämmer ska webbläsaren öppna en sida vid namn "Min sida!" med en rubrik samt en paragraf.</p>
+
+    <ul class="tips">
+        <li>Tänk på att alla sluttaggar måste börja med snedstreck / annars blir datorn förvirrad.</li>
+        <li>Prova att lägga till en ny paragraf och ändra titeln på hemsidan till något roligare.</li>
+        <li>h1 ger en stor rubrik som har störst prio medans h6 ger en liten med lägst prio.</li>
+        <li>Glöm inte att rubriker och paragrafer måste vara <em>inom</em> body på samma sätt som title är <em>inom</em> head.</li>
+        <li>Allt förutom DOCTYPE ska vara INOM html.</li>
+        <li>Tänk på att du alltid måste <strong>spara</strong> filen i Notepad++ och sedan <strong>ladda om</strong> sidan i webbläsaren (t.ex. Chrome) <em>varje gång du ändrar något ifall du vill se något resultat.</em></li>
+    </ul>
+
+    <table>
+        <tr>
+            <td>&lt;!DOCTYPE html&gt;</td>
+            <td>Berättar för datorn att dokumentet är ett html-dokument.</td>
+        </tr>
+        <tr>
+            <td>&lt;html&gt;</td>
+            <td>Berättar ÅTER för den dumma datorn att detta är ett html-dokument.</td>
+        </tr>
+        <tr>
+            <td>&lt;head&gt;</td>
+            <td>Innehåller allt som webbläsaren vill veta om hemsidan.</td>
+        </tr>
+        <tr>
+            <td>&lt;title&gt;</td>
+            <td>Visar namn på sidan i webbläsare, sökmotorer och bokmärken.</td>
+        </tr>
+        <tr>
+            <td>&lt;body&gt;</td>
+            <td>Själva innehållet på sidan.</td>
+        </tr>
+        <tr>
+            <td>&lt;h1&gt;</td>
+            <td>Sidans första, viktigaste rubrik.</td>
+        </tr>
+        <tr>
+            <td>&lt;p&gt;</td>
+            <td>En paragraf med text.</td>
+        </tr>
+
+    </table>
+</article>
+
+
+<!-- FÄRGER -->
+<article>
+    <h2>Del 2: Färger och du</h2>
+
+    <p>
+        Nu är själva grunden på sidan klar men tja... Den ser ju rätt så sunkig ut. Lite färg vore väl trevligt? För att ändra utseendet på sidan behöver vi använda oss utav ett element som kallas &lt;style&gt;. Style är ett så kallat informationselement som fungerar lite annorlunda än de andra elementen - dess uppgift är bara att ge information om elementet det placeras inom.
+
+        Vi kan säga att vi vill att rubriken ska vara röd och textstycket under ska vara blått.
+
+    </p>
+
+    <img src="img/styleelement.png" alt="kod för röd rubrik">
+
+    <p>Som ni ser ovan hamnar &lt;style&gt; inuti head där det ger information om att textens färg ska vara röd. Så enkelt är det! Men du kanske vill ha en fin bakgrundsfärg på sidan? Vi sätter &lt;style&gt; inom &lt;body&gt; på precis samma sätt som head.</p>
+
+    <img src="img/styleelement2.png" alt="kod för grön bakgrund">
+
+    <p>Det som påverkar utseendet på din hemsida kallas för CSS, Cascading Style Sheets. Med CSS kan man ändra allt från färger till layout och även göra animationer och jag kan lugnt säga att det CSS på denna hemsidan har tagit mer tid än något annat. Men vi ska börja lite lugnt med färger, bakgrund och typsnitt. </p>
+
+    <h3>Färger</h3>
+
+    <p>Det finns tre sätt att förklara för datorskrället vilken färg vi vill ha. Det vi använt oss av ovan har varit de färger som finns inbyggda inom CSS som "red", "blue" och "green". Jag tar några exempel här under men  <a style="text-decoration: underline;" href="https://developer.mozilla.org/en-US/docs/Web/CSS/named-color">här</a>  finns en länk med alla förbestämda färger.</p>
+
+<div class="exempel-color">
+        
+    <span style="background-color: tomato;">tomato</span>
+    <span style="color: white; background-color: blueviolet;">blueviolet</span>
+    <span style="background-color: lavender;">lavender</span>
+    <span style="background-color: palegreen;">palegreen</span>
+    <span style="background-color: dodgerblue;">dodgerblue</span>
+    <span style="background-color: hotpink;">hotpink</span>
+    <span style="background-color: orange;">orange</span>
+</div>
+
+<h3>RGB</h3>
+    <p>Vill man finslipa urvalet lite kan man använda sig utav RGB. RGB är kanske mest känt för "gamerbling", de epilepsiframkallande lamporna som får en datormus att kosta dubbelt. Akronymen står för Red, Blue, Green och likt hexadecimaler får man skriva det i tre högar där varje värde går från 0 till 255. Vill man ha rött skriver man "255, 0, 0" och vill man ha grönt skriver man 0, 255, 0. Gissa hur man får blått? Med RGB kan man även välja hur genomskinlig färgen ska vara genom att använda ett fjärde värde, synligheten.</p>
+
+    <div class="exempel-color">
+    
+        <span style=" background-color: rgb(0, 191, 255);">rgb(0, 191, 255)</span>
+        <span style=" background-color: rgb(255, 153, 255);">rgb(255, 153, 255)</span>
+        <span style=" background-color: rgb(0, 204, 102);">rgb(0, 204, 102)</span>
+        <span style=" background-color: rgb(255, 255, 0);">rgb(255, 255, 0)</span>
+        <span style=" background-color: rgb(255, 51, 0);">rgb(255, 51, 0)</span>
+
+        </div>
+
+    <div class="exempel-color">
+        
+        <span style="color: white; background-color: rgb(0, 0, 0, 1.0);">rgba(0, 0, 0, 1.0)</span>
+        <span style="color: white; background-color: rgba(0, 0, 0, 0.8);">rgba(0, 0, 0, 0.8)</span>
+        <span style="color: white; background-color: rgba(0, 0, 0, 0.4);">rgba(0, 0, 0, 0.4)</span>
+        <span style="color: black; background-color: rgba(0, 0, 0, 0.2);">rgba(0, 0, 0, 0.2)</span>
+        <span style="color: black; background-color: rgba(0, 0, 0, 0.0);">rgba(0, 0, 0, 0.0)</span>
+
+    </div>
+
+
+    <h3>Hexadecimaler</h3>
+    <p> Som ni kanske vet pratar datorer i ettor och nollor, men vid väldigt stora tal är det lättare att använda sig utav det så kallade hexadecimala nummersystemet. Det är baserat på både det vanliga decimala systemet (0-9) samt sex bokstäver (A-F).
+
+    En vanlig missuppfattning är att hexadecimaler har något med häxkonster att göra. Det är en sanning med modifikation. Allt med datorer är svart magi, men hexadecimaler är i grunden ett "staket" eller för dagens kids "haschtagg" följt av sex siffror eller bokstäver vilka är värden för färg samt färgstyrka. Dessa värden är i ordern rött, grönt, blått. #FF0000 ger rött, #00FF00 ger grönt och jag orkar inte skriva vad blått är, ni får gissa.
+    </p>
+
+    <div class="exempel-color">
+        
+        <span style="color: white; background-color: #008080;">#008080</span>
+        <span style="background-color: #FFFAFA;">#FFFAFA</span>
+        <span style="color: white; background-color: #191970;">#191970</span>
+        <span style="background-color: #FF7F50;">#FF7F50</span>
+        <span style="color: white; background-color: #800000;">#800000</span>
+        <span style="background-color: #ADFF2F;">#ADFF2F</span>
+        <span style="background-color: #6A5ACD;">#6A5ACD</span>
+
+    </div>
+
+</article>
+
+
+<!-- TEXT -->
+<article>
+    <h2>Lektion 3: Typ typsnitt</h3>
+
+        <p>Nu när vi lekt runt med färger så kan vi tänka lite på hur texten ska se ut. Standardtypsnittet brukar vara New Times Roman vilket kanske är lite tråkigt, vi provar med något nytt!</p>
+
+        <div style="padding: 20px; border: #ccc solid 2px; column-count: 2;" class="exempel-text">
+            
+            <p style="font-family: 'Courier New', Courier, monospace;">style="font-family: 'Courier New', Courier, monospace;"</p>
+            <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"</p>
+            <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"</p>
+            <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"</p>
+            <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"</p>
+            <p style="font-family: cursive;">style="font-family: cursive;"</p>
+        </div>
+
+        <p>Tänk på att texten kan se annorlunda ut på olika datorer och skärmar. Vi är även alla olika som människor så en liten text behöver större ögon och vice versa. För att ackommendera behöver vi kanske ändra på storleken. <span style="font-size: 20px;">En 20 pixlar stor text</span> passar kanske de med mindre ögon medans <span style="font-size: 5px;">en text på 5 pixlar</span> passar hybrider mellan myra och människa. Glöm inte att använda semikolon efter varje sak du ändrar.</p>
+
+        <img src="img/textexempel.png" alt="textexempel">
+
+        <p>Förutom typsnitt och storlek på texten kan man snygga till den lite med olika. Vill man t.ex. ha kursiv text kan man använda "font-style: italic;" och vill man ha understruken text kan man använda "text-decoration: underline;".</p>
+
+        <p>Förr i tiden var det hippt att ha sin text centrerad på hemsidan och ibland kan det vara roligt att ha texten lite hit och dit. Nu kan ni sjunga med:</p>
+
+        <pre style="text-align: center;">
+            Prästens lilla kråka skulle ut och åka,
+            Ingen hade hon som körde.
+            Än slank hon 
+            <span style="display: block; text-align: right;">dit</span>
+            Och än slank hon 
+            <span style="display: block; text-align: left;">dit</span>
+            Och än slank hon 
+            <span style="display: block; transform: rotate(180deg);">ner i diket!</span>
+        </pre>
+
+        <p>Ska jag skriva ut alla sätt som man kan variera texten på här så kommer det bli en vääääldigt lång lektion så lek gärna runt med hjälp av tabellen under. Framöver planerar jag att göra en mer ingående lektion med roliga effekter på texten men än så länge får ni nöja er med ovanstående.</p>
+
+        <table>
+            <tr>
+                <td>"font-size: 25px;"</td>
+                <td style="font-size: 25px;">En 25 pixlar stor text</td>
+            </tr>
+            <tr>
+                <td>"font-size: 5px;"</td>
+                <td style="font-size: 10px;">En 5 pixlar liten text</td>
+            </tr>
+            <tr>
+                <td>"font-style: italic;"</td>
+                <td style="font-style: italic;">En kursiv text</td>
+            </tr>
+            <tr>
+                <td>"text-align: left;"</td>
+                <td style="text-align: left;">En text till vänster</td>
+            </tr>
+            <tr>
+                <td>"text-align: center;"</td>
+                <td style="text-align: center;">En centrerad text</td>
+            </tr>
+            <tr>
+                <td>"text-align: right;"</td>
+                <td style="text-align: right;">En text till höger</td>
+            </tr>
+            <tr>
+                <td>"transform: scale(-1, 1);"</td>
+                <td style="transform: scale(-1, 1);">Här var det baklänges</td>
+            </tr>
+            <tr>
+                <td>"transform: rotate(180deg);</td>
+                <td style="transform: rotate(180deg);">Här var det upp och ned</td>
+            </tr>
+            <tr>
+                <td>"text-decoration: underline;"</td>
+                <td style="text-decoration: underline;">Understruken text</td>
+            </tr>
+            <tr>
+                <td>"text-decoration: line-through;"</td>
+                <td style="text-decoration: line-through;">Genomstruken text</td>
+            </tr>
+        </table>
+</article>
+
+
+<!-- BILDER -->
+<article>
+    <h2>Lektion 4: Bilder och annat för våra sinnen</h2>
+
+    <p>
+        Är man en del av det stora spindelnätet är det viktigt att man har trådar till andra sidor så att folk kan komma vidare. Elementet a som i "anchor" (ankare, inte ankor) berättar att det som komma skall är en hyperlänk till någon annanstans, och precis som style behöver den ett attribut som berättar vart man vill komma genom att klicka på den. href anger vilken URL som ska användas. Mellan taggarna skriver man in det som ska synas på själva hemsidan.
+    </p>    
+
+    <img src="img/länkexempel.png" alt="länkexempel">
+    
+    <p>
+        
+        Tar dig t.ex. till vår egen eminenta hemsida.
+
+        Det finns absoluta och relativa länkar. En absolut länk skickar användaren till en utomstående hemsida medan relativa länkar används för sidor på samma dator. Prova att göra en ny hemsida och länka till den med &lt;a&gt;.
+    </p>
+
+    <p>
+        Något som är viktigt på en hemsida är att lägga in massvis med bilder i olika storlekar och format. Blinkande, animerade GIF:ar samt äcklig MIDI-musik som inte går att stänga av är klassiker. Men vi nöjer oss med en bild tills vidare. För att just detta experiment ska fungera behöver du lägga en bild i samma mapp som din hemsida. Det kan vara vilken bild som helst!
+    </p>
+
+    <img src="img/floki1.jpg" alt="floki1"><br>
+    <img src="img/imgexempel.png" alt="bildexempel">
+
+    <p>Som du ser ovan fungerar &lt;img&gt; på samma sätt som &lt;a&gt;. Vill man ändra storleken på bilden kan man göra det via &lt;style&gt;.</p>
+    <img src="img/bildexempel.png" alt="bildexempel">
+</article> 
+
+</main>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+</body>
+</html>
