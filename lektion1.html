@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+    <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div id="header"></div>
+
+<main>
+    <article id="lektion1">
+            <h2>Del 1: Att bygga ett hemside-skelett</h2>
+    
+            <img src="img/bananelement.png" alt="Element med bananparanteser">
+            <p>	Ställ fram en kopp kaffe och inta positionen ”datanörd med gorillanacke”, vi ska börja med HTML! I första lektionen ska vi göra en enkel hemsida men först måste jag förklara lite hur allt fungerar. 
+                
+            HTML består av element med innehåll som datorer kan läsa, dessa omringas av vänster- och högerbanan (eller vinkelparanteser som de lärda säger). De flesta taggar behöver även en sluttagg som föregås av ett snedtreck, men det finns undantag som &lt;!DOCTYPE&gt;.
+        </p>
+        <p>
+            De mest grundläggande elementen inom html förutom doctype är html, title samt body. Html är själva grunden på hemsidan, title ger sidan ett namn och body är själva "kroppen" där innehåll som vi människor kan se ska vara. Innehållet kan bland annat bestå av text, bilder, videor och länkar men vi börjar med en rubrik följt av en paragraf med text. Öppna nu filen du gjorde i introt och klistra in nedanstående.</p>
+
+        <div class="exempel">&lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+            &lt;head&gt;
+                &lt;title&gt; Min sida! &lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt; En rubrik! &lt;/h1&gt;
+                &lt;p&gt; En paragraf! &lt;/p&gt;
+            &lt;/body&gt;
+        &lt;/html&gt;</div>
+                
+            <p>Gissa vad du precis gjorde? En hemsida! Ovanstående är själva grunden för en hemsida. Spara filen och klicka sedan på den i mappen. Om allt stämmer ska webbläsaren öppna en sida vid namn "Min sida!" med en rubrik samt en paragraf.</p>
+
+            <ul class="tips">
+                <li>Tänk på att alla sluttaggar måste börja med snedstreck / annars blir datorn förvirrad.</li>
+                <li>Prova att lägga till en ny paragraf och ändra titeln på hemsidan till något roligare.</li>
+                <li>h1 ger en stor rubrik som har störst prio medans h6 ger en liten med lägst prio.</li>
+                <li>Glöm inte att rubriker och paragrafer måste vara <em>inom</em> body på samma sätt som title är <em>inom</em> head.</li>
+                <li>Allt förutom DOCTYPE ska vara INOM html.</li>
+                <li>Tänk på att du alltid måste <strong>spara</strong> filen i Notepad++ och sedan <strong>ladda om</strong> sidan i webbläsaren (t.ex. Chrome) <em>varje gång du ändrar något ifall du vill se något resultat.</em></li>
+            </ul>
+        
+            <table>
+                <tr>
+                    <td>&lt;!DOCTYPE html&gt;</td>
+                    <td>Berättar för datorn att dokumentet är ett html-dokument.</td>
+                </tr>
+                <tr>
+                    <td>&lt;html&gt;</td>
+                    <td>Berättar ÅTER för den dumma datorn att detta är ett html-dokument.</td>
+                </tr>
+                <tr>
+                    <td>&lt;head&gt;</td>
+                    <td>Innehåller allt som webbläsaren vill veta om hemsidan.</td>
+                </tr>
+                <tr>
+                    <td>&lt;title&gt;</td>
+                    <td>Visar namn på sidan i webbläsare, sökmotorer och bokmärken.</td>
+                </tr>
+                <tr>
+                    <td>&lt;body&gt;</td>
+                    <td>Själva innehållet på sidan.</td>
+                </tr>
+                <tr>
+                    <td>&lt;h1&gt;</td>
+                    <td>Sidans första, viktigaste rubrik.</td>
+                </tr>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>En paragraf med text.</td>
+                </tr>
+        
+            </table>
+    </article>
+</main>
+
+    <div id="footer"></div>
+<script>
+
+</script>
+</body>
+</html>
