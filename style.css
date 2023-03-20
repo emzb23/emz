@@ -42,18 +42,45 @@
         padding: 1em;
         color: #fff;
         text-justify: distribute;
+        text-transform: uppercase;
     }
 
 
 /* MAIN */
 
 main {
-    margin: 20px;
+    margin: 20px 10%;
 }
+
+/* INDEX */
+    #main-info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #info-h3 {
+        text-align: center;
+        padding: 1em;
+    }
+
+    .info-card {
+        padding: 0.8em;
+        border: 2px solid #eee;
+        width: 30%;
+        object-fit: cover;
+        text-align: center;
+    }
+
+    .info-card img {
+        max-width: 95%;
+        height: auto;
+    }
+
 /* ARTICLE */
 
     article, .win-button{
-            margin-top: 20px;
+        margin-top: 20px;
         }
     
     #kattbilder {
