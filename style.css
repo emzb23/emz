@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 * {
     margin: 0;
@@ -6,15 +7,16 @@
     text-decoration: none;
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 /* HEADER */
 
     header {
-        background-image: url(berg2.jpg);
-        background-position: center;
+        background-image: url(bakgrund3.jpg);
+        background-size: 100%;
         background-repeat: no-repeat;
-        color: rgb(0, 0, 0);
         text-align: center;
         padding: 150px;
     }
@@ -22,8 +24,8 @@
     #h1-main {
         font-family: 'Work Sans', sans-serif;
         font-size: 50px;
-        font-weight: 900;
-        text-shadow: 2px 2px #fff;
+        font-weight: 700;
+        color: white;
     }
 
 /* NAV */
@@ -39,17 +41,59 @@
     }
 
     nav ul li a {
-        padding: 1em;
         color: #fff;
         text-justify: distribute;
+        font-weight: 400;
         text-transform: uppercase;
+        font-family: 'Courier New', Courier, monospace;
+        padding-bottom: 2px;
     }
+
+    .navbar-link {
+        display: inline-block;
+        position: relative;
+    }
+
+    .navbar-link:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    .navbar-link:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+/* UNDERNAV */
+
+#undernav {
+    background-color: #f0f;
+    display: flex;
+    justify-content: space-evenly;
+    top: 0;
+    width: 100%;
+    position: sticky;
+}
+
+#undernav a {
+    color: black;
+    padding: 1vh;
+    display: block;
+}
 
 
 /* MAIN */
 
 main {
-    margin: 20px 10%;
+    margin: 0 10%;
 }
 
 /* INDEX */
@@ -97,6 +141,10 @@ main {
         border: 2px solid #ccc;
         padding: 1em;
         box-shadow: 7px 7px #ccc;
+    }
+
+    .uline-link {
+        text-decoration: underline;
     }
 
     article p, article h3, article img{
